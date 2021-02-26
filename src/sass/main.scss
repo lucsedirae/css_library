@@ -1,28 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$color-primary: #aff069;
+$color-primary-light: #c7ff8a;
+$color-primary-dark: #6fa337;
+$color-secondary: #de69f0;
+$color-secondary-dark: #9100a8;
+$color-background: white;
+$color-background-dark: grey;
+$text-color-dark: white;
+$box-shadow-dark: white;
+$hover-shadow: orange;
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .appbar {
   padding: 3px;
-  background-color: #aff069; }
+  background-color: $color-primary;
+}
 
 .appbar-dark {
   padding: 3px;
-  background-color: #6fa337;
-  color: white; }
+  background-color: $color-primary-dark;
+  color: white;
+}
 
 .background {
-  background: white;
-  height: 100vh; }
+  background: $color-background;
+  height: 100vh;
+}
 
 .background-dark {
-  background: grey;
-  height: 100vh; }
+  background: $color-background-dark;
+  height: 100vh;
+}
 
 .button {
-  background-color: #aff069;
+  background-color: $color-primary;
   border-radius: 3px;
   width: 5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
@@ -30,75 +47,87 @@
   text-decoration: none;
   box-shadow: 1px 1px 3px black;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+}
 
 .button:hover {
-  background-color: #aff069;
+  background-color: $color-primary;
   border-radius: 3px;
   width: 5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 1rem;
   text-decoration: none;
-  box-shadow: 1px 1px 5px orange;
-  text-shadow: 1px 1px 5px orange;
+  box-shadow: 1px 1px 5px $hover-shadow;
+  text-shadow: 1px 1px 5px $hover-shadow;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+}
 
 .button-dark {
-  background-color: #6fa337;
+  background-color: $color-primary-dark;
   border-radius: 3px;
   width: 5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 1rem;
   text-decoration: none;
-  box-shadow: 1px 1px 5px white;
+  box-shadow: 1px 1px 5px $box-shadow-dark;
   text-shadow: 1px 1px 5px white;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+}
 
 .button-dark:hover {
-  background-color: #6fa337;
+  background-color: $color-primary-dark;
   border-radius: 3px;
   width: 5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 1rem;
   text-decoration: none;
-  box-shadow: 1px 1px 5px orange;
-  text-shadow: 1px 1px 5px orange;
+  box-shadow: 1px 1px 5px $hover-shadow;
+  text-shadow: 1px 1px 5px $hover-shadow;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+}
 
 .header {
-  text-shadow: 1px 1px 5px silver; }
+  text-shadow: 1px 1px 5px silver;
+}
 
 .header-dark {
-  text-shadow: 1px 1px 5px black; }
+  text-shadow: 1px 1px 5px black;
+}
 
 .label {
   font-weight: 500;
   font-size: large;
-  text-shadow: 1px 1px 5px silver; }
+  text-shadow: 1px 1px 5px silver;
+}
 
 .label-dark {
-  color: white;
+  color: $text-color-dark;
   font-weight: 500;
   font-size: large;
-  text-shadow: 1px 1px 5px black; }
+  text-shadow: 1px 1px 5px black;
+}
 
 .textbox {
   padding: 1rem;
   width: 500px;
-  text-align: center; }
+  text-align: center;
+}
 
 .textbox-narrow {
   padding: 1rem;
   width: 300px;
-  text-align: center; }
+  text-align: center;
+}
 
 .textbox-wide {
   padding: 1rem;
   width: 700px;
-  text-align: center; }
+  text-align: center;
+}
 
 .wrapper {
-  margin: 1rem; }
+  margin: 1rem;
+}
