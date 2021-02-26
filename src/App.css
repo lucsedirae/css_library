@@ -15,11 +15,13 @@
 
 .background {
   background: white;
-  height: 100vh; }
+  position: relative;
+  padding: 1rem; }
 
 .background-dark {
   background: grey;
-  height: 100vh; }
+  position: relative;
+  padding: 1rem; }
 
 .button {
   background-color: #aff069;

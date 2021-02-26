@@ -19,15 +19,9 @@ function App() {
   return (
     <div className="App">
       <Layout isDarkMode={isDarkMode}>
-        <TextBox boxStyle={"textbox-wide"}>
-          The big cheese lancashire cheese triangles. Melted cheese queso who
-          moved my cheese cauliflower cheese cheesy feet swiss squirty cheese
-          cheeseburger. Feta cauliflower cheese fondue babybel cut the cheese
-          halloumi blue castello monterey jack. Stilton boursin ricotta stinking
-          bishop st. agur blue cheese camembert de normandie parmesan manchego.
-          Brie paneer cream cheese pepper jack.
-        </TextBox>
-        <TextBox boxStyle={"textbox-narrow"}>
+        <Label isDarkMode={isDarkMode}>Class "textbox": </Label>
+
+        <TextBox boxStyle={"textbox"}>
           {" "}
           The big cheese lancashire cheese triangles. Melted cheese queso who
           moved my cheese cauliflower cheese cheesy feet swiss squirty cheese
@@ -36,7 +30,18 @@ function App() {
           bishop st. agur blue cheese camembert de normandie parmesan manchego.
           Brie paneer cream cheese pepper jack.
         </TextBox>
-        <TextBox boxStyle={"textbox"}>
+        <Label isDarkMode={isDarkMode}>Class "textbox-wide": </Label>
+        <TextBox boxStyle={"textbox-wide"}>
+          The big cheese lancashire cheese triangles. Melted cheese queso who
+          moved my cheese cauliflower cheese cheesy feet swiss squirty cheese
+          cheeseburger. Feta cauliflower cheese fondue babybel cut the cheese
+          halloumi blue castello monterey jack. Stilton boursin ricotta stinking
+          bishop st. agur blue cheese camembert de normandie parmesan manchego.
+          Brie paneer cream cheese pepper jack.
+        </TextBox>
+        <Label isDarkMode={isDarkMode}>Class "textbox-narrow": </Label>
+
+        <TextBox boxStyle={"textbox-narrow"}>
           {" "}
           The big cheese lancashire cheese triangles. Melted cheese queso who
           moved my cheese cauliflower cheese cheesy feet swiss squirty cheese
